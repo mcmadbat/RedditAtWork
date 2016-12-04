@@ -1,11 +1,10 @@
 'use strict';
 
-const title = 'all subreddits';
+const url = 'https://www.reddit.com/r/all/';
 const hiddenHTML = '<center><h2>NSFW Content Hidden by Reddit At Work :)</h2></center>';
 
 // if on r/all
-if ( document.title === title ){
-
+if ( document.URL === url ){
 	// all the divs
 	let divs = $('#siteTable').children().toArray();
 	
